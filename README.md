@@ -6,30 +6,28 @@ Contents
 ========
 This repo contains fpm-cookery recipes to create rpm/debs for the following tools:
 
-	- libsqlite (3.8.6)
-    - readosm (1.0.0)
-    - freexl (1.0.0)
-    - geos (3.4.2)
-    - proj4 (4.8.0)
-	- libspatialite (4.2.0)
-	- spatialitetools (4.2.0)
+- libsqlite (3.8.6)
+- readosm (1.0.0)
+- freexl (1.0.0)
+- geos (3.4.2)
+- proj4 (4.8.0)
+- libspatialite (4.2.0)
+- spatialitetools (4.2.0)
 
 Installation - Packages
 =======================
-
 Install the rpms in this order.
 
-    - libsqlite
-    - readosm
-    - freexl
-    - geos
-    - proj4
-    - libspatialite
-    - spatialitetools
+- libsqlite
+- readosm
+- freexl
+- geos
+- proj4
+- libspatialite
+- spatialitetools
 
 Building the packages
 =====================
-
 Building the packages is performed within a docker container; so docker should be available on the system building the rpms. The build script can be invoked by:
 
     sudo ./make-rpms
@@ -48,4 +46,4 @@ Note on updating component version: update the version, url and sha1 in the rele
 
 TODO
 ====
-    - deb packaging
+- deb packaging
