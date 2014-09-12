@@ -1,0 +1,16 @@
+#!/bin/bash
+RECIPE=fpm-cookery-spatialite
+git clone https://github.com/ddierickx/$RECIPE /tmp/$RECIPE
+cd /tmp/$RECIPE
+
+dependencies=( 'freexl' 'proj4' 'geos' 'readosm' 'libsqlite' 'libspatialite' 'spatialitetools' )
+
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
+
+for dependency in "${dependencies[@]}"
+do
+	rake $dependency[centos,rpm] --trace
+	yum localinstall -y /tmp/$RECIPE/$dependency/pkg/*.rpm
+done
+
+find /tmp/$RECIPE -name "*.rpm" -exec cp {} /rpms/ \;

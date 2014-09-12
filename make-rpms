@@ -1,0 +1,10 @@
+#!/bin/bash
+IMAGE=fpm-cookery-spatialite
+mkdir rpms
+sudo docker build -t $IMAGE .
+sudo docker run -it $IMAGE 
+sudo docker run --rm -it \
+    -v `readlink -f _docker-make-rpms`:/tmp/_docker-make-rpms \
+    -v `readlink -f rpms`:/rpms \
+    $IMAGE \
+    /tmp/_docker-make-rpms
