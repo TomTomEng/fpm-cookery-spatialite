@@ -1,6 +1,6 @@
 #!/bin/bash
 RECIPE=fpm-cookery-spatialite
-git clone https://github.com/ddierickx/$RECIPE /tmp/$RECIPE
+git clone https://github.com/TomTomEng/fpm-cookery-spatialite /tmp/$RECIPE
 cd /tmp/$RECIPE
 
 dependencies=( 'freexl' 'proj4' 'geos' 'readosm' 'libsqlite' 'libspatialite' 'spatialitetools' )
