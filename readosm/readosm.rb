@@ -1,13 +1,13 @@
 class ReadOSM < FPM::Cookery::Recipe
    name     'ReadOSM'
-   version  '1.0.0'
+   version  '1.0.0d'
    revision '1'
 
    description 'readosm'
 
    homepage 'https://www.gaia-gis.it/fossil/readosm/index'
-   source 'http://www.gaia-gis.it/gaia-sins/readosm-1.0.0b.tar.gz'
-   sha256 'ed7e0d17fbfc7574b097e2358a143788eba23e0477e7108237f4b0aac3d85710'
+   source 'http://www.gaia-gis.it/gaia-sins/readosm-sources/readosm-1.0.0d.tar.gz'
+   sha256 'f056d26489610699802a2a44e315750383af303cf7dcdc580c52bb5ed4d136e3'
 
 
    def build

@@ -6,11 +6,11 @@ Contents
 ========
 This repo contains fpm-cookery recipes to create rpm/debs for the following tools:
 
-- libsqlite (3.8.6)
-- readosm (1.0.0)
-- freexl (1.0.0)
+- libsqlite (3.8.8.3)
+- readosm (1.0.0d)
+- freexl (1.0.0i)
 - geos (3.4.2)
-- proj4 (4.8.0)
+- proj4 (4.9.1)
 - libspatialite (4.2.0)
 - spatialitetools (4.2.0)
 
@@ -34,12 +34,12 @@ Building the packages is performed within a docker container; so docker should b
 
 After that you should find the following in the `rpms` folder:
 
-    freexl-1.0.0-1.x86_64.rpm
+    freexl-1.0.0i-1.x86_64.rpm
     geos-3.4.2-1.x86_64.rpm
     libspatialite-4.2.0-1.x86_64.rpm
-    libsqlite-3.8.6-1.x86_64.rpm
-    proj4-4.8.0-1.x86_64.rpm
-    ReadOSM-1.0.0-1.x86_64.rpm
+    libsqlite-3.8.8.3-1.x86_64.rpm
+    proj4-4.9.1-1.x86_64.rpm
+    ReadOSM-1.0.0d-1.x86_64.rpm
     spatialitetools-4.2.0-1.x86_64.rpm
 
 Note on updating component version: update the version, url and sha1 in the relevant recipe.rb file.

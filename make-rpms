@@ -1,5 +1,6 @@
 #!/bin/bash
 IMAGE=fpm-cookery-spatialite
+rm -rf rpms
 mkdir rpms
 sudo docker build -t $IMAGE .
 sudo docker run -it $IMAGE 
