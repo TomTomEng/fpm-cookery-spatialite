@@ -11,7 +11,7 @@ class Proj4 < FPM::Cookery::Recipe
 
 
    def build
-        cd('proj-4.9.1')
+        #cd('proj-4.9.1')
         configure
         make
     end
