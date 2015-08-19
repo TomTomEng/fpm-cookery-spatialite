@@ -1,7 +1,7 @@
 class Geos < FPM::Cookery::Recipe
    name     'geos'
    version  '3.4.2'
-   revision '1'
+   revision '2'
 
    description 'geos'
 
