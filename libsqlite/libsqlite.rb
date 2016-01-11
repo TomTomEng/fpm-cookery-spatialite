@@ -1,13 +1,13 @@
 class LibSqlite < FPM::Cookery::Recipe
      name     'libsqlite'
-     version  '3.8.8.3'
+     version  '3.10.0'
      revision '1'
 
      description 'libsqlite'
 
      homepage 'http://www.sqlite.org/download.html'
-     source 'https://sqlite.org/2015/sqlite-autoconf-3080803.tar.gz'
-     sha256 '74576964cd9db44c13bf95d6a7c36b06cfdfb2fe4e3e26c9ce1ae0b2e328b411'
+     source 'https://sqlite.org/2016/sqlite-autoconf-3100000.tar.gz'
+     sha256 '43cc292d70711fa7580250c8a1cd7c64813a4a0a479dbd502cce5f10b5d91042'
 
      def build
           configure

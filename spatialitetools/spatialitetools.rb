@@ -1,13 +1,13 @@
 class SpatialiteTools < FPM::Cookery::Recipe
      name     'spatialitetools'
-     version  '4.2.0'
+     version  '4.3.0'
      revision '1'
 
      description 'spatialitetools'
 
      homepage "https://www.gaia-gis.it/fossil/spatialite-tools/index"
-     source "http://www.gaia-gis.it/gaia-sins/spatialite-tools-4.2.0.tar.gz"
-     sha256 "890c4cdab5b6b450df4f98341110dd79df20b3cc3af4fecd6e4a06cfc718cdbc"
+     source "http://www.gaia-gis.it/gaia-sins/spatialite-tools-4.3.0.tar.gz"
+     sha256 "f739859bc04f38735591be2f75009b98a2359033675ae310dffc3114a17ccf89"
  
      depends  'libspatialite'
 
